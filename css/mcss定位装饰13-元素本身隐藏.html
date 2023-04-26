@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 元素本身隐藏: 例如鼠标hover之后元素隐藏等 */
+        /* 常见属性: 1.visibility:hidden（占位式的隐藏，所用较少）   2.display: none*/
+        div{
+            height: 200px;
+            width: 200px;
+        }
+        .one{
+            /* 占位隐藏，工作不常用 */
+            /* 虽然visibility看不到了，但是仍然还占据着位置 */
+            /* visibility: hidden; */
+
+            /* 重点常用: 不占位隐藏，工作常用 */
+            display: none;
+
+            background-color: pink;
+        }
+        .two{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

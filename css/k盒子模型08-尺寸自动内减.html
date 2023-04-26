@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 尺寸内减: box-sizing: border-box; */
+        div{
+            /* 本来只打算尺寸为100*100,现在变成了160*160 */
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            border: 10px solid #000;
+            padding: 20px;
+
+            /* 变成css3的盒子模型，好处: 加了border和padding不需要手动减法 */
+            /* 内减模式 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>文字</div>
+</body>
+</html>

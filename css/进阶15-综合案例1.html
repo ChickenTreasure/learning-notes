@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a显示效果是行内，加宽高默认不生效，转显示模式：行内块 */
+        
+        div {
+            margin: 0 auto;
+            height: 100px;
+            width: 800px;
+        }
+        
+        a {
+            text-decoration: none;
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            color: #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        a:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 选多行加内容删除，alt+shift+鼠标左键点击 -->
+    <div>
+        <a href="#">导航1</a>
+        <a href="#">导航2</a>
+        <a href="#">导航3</a>
+        <a href="#">导航4</a>
+        <a href="#">导航5</a>
+    </div>
+</body>
+
+</html>

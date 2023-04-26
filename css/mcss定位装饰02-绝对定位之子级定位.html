@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 绝对定位 */
+
+        /* 有父级，父级无定位，浏览器为参照物 */
+        .box{
+            position: absolute;
+            left: 0;
+            /* top: 0; */
+            /* left: 50px; */
+            /* 1.脱标，不占位置 */
+            /* 2.改变标签的显示模式特点:具备了行内块的特点（在一行共存，且宽高生效） */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 相对于非静态定位的父元素进行定位 -->
+    <!-- 绝对定位:
+    先找已经定位的父级，如果有这样的父级就以这个父级为参照物进行定位 
+    有父级，但父级没定位，以浏览器窗口为参照物进行定位-->
+    <p>ceshiceshicscscscscscsccscsscscsc的事实得瑟得瑟的都是第四生当当时都湿都湿的都湿都湿都湿都湿大苏打都湿大苏打说的说的说的是多少多少的多少多少电视</p>
+    <p>ceshiceshicscscscscscsccscsscscsc的事实得瑟得瑟的都是第四生当当时都湿都湿的都湿都湿都湿都湿大苏打都湿大苏打说的说的说的是多少多少的多少多少电视</p>
+    <p>ceshiceshicscscscscscsccscsscscsc的事实得瑟得瑟的都是第四生当当时都湿都湿的都湿都湿都湿都湿大苏打都湿大苏打说的说的说的是多少多少的多少多少电视</p>
+    <p>ceshiceshicscscscscscsccscsscscsc的事实得瑟得瑟的都是第四生当当时都湿都湿的都湿都湿都湿都湿大苏打都湿大苏打说的说的说的是多少多少的多少多少电视</p>
+    <div class="box">box</div>
+    <p>ceshiceshicscscscscscsccscsscscsc的事实得瑟得瑟的都是第四生当当时都湿都湿的都湿都湿都湿都湿大苏打都湿大苏打说的说的说的是多少多少的多少多少电视</p>
+    <p>ceshiceshicscscscscscsccscsscscsc的事实得瑟得瑟的都是第四生当当时都湿都湿的都湿都湿都湿都湿大苏打都湿大苏打说的说的说的是多少多少的多少多少电视</p>
+
+</body>
+</html>

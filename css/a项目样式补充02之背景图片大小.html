@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 作用: 设置背景图片的大小 */
+        /* 语法: background-size: 宽度 高度 */
+        /* 取值: 数字+px   or   百分比   or   contain图片等比例缩放，不会超出盒子最大   cover覆盖直到刚好填满整个盒子没有空白 */
+        
+        /* background连写 拓展 */
+        /* background: color image repeat position/size; */
+        .box{
+            width: 400px;
+            height: 300px;
+            background-color: pink;
+            background-image: url(../小兔鲜项目/images/1.jpg);
+            background-repeat: no-repeat;
+            /* background-size: 50%; */
+            /* background-size: contain; */
+
+            /* 保证宽和高与盒子的尺寸完全相同，但图片可能会显示不全 */
+            /* background-size: cover; */
+
+            background-size: contain;
+            /* 工作中，图的比例和盒子的比例都是相同的，contain和cover效果完全相同 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

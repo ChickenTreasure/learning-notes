@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 场景: 行内标签 */
+        span{
+            /* 行内元素 内外边距 上下存在问题，上下不显示，左右生效 */
+            margin: 100px;
+            line-height: 100px;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 行内元素 内外边距 margin padding -->
+
+    <!-- 如果想通过margin或padding改变行内标签的位置，无法生效 -->
+    <!-- 行内标签的margin-top和bottom 不生效 -->
+    <!-- 行内标签的padding-top和bottom不生效 -->
+
+    <span>span</span>
+    <span>span</span>
+    <!-- 总结: 如果想改变行内标签水平的位置，加margin和padding都可以;但如果要改垂直的位置，margin和padding就失效 -->
+    <!-- 此时解决办法: 要么转换行内块;要么就加line-height行高就可以了 -->
+</body>
+</html>

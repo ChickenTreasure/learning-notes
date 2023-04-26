@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 相对定位 */
+        /* 虽然变了地方，但原有位置依旧为之保留 */
+        /* 1.占有原来的位置，没有脱标
+            2.仍然具备标签原有的显示模式特点
+            3.改变位置参照自己原来的位置 */
+        /* 如果只加position不加位置left等，位置不变 */
+        .box{
+            position: relative;
+            left: 100px;
+            top: 200px;
+
+            right: 200px;
+            bottom: 400px;
+            /* 右跟下right bottom都没有生效;如果left和right都有，水平以left为准,bottom和top都有,垂直以top为准 */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 作用: 可以让元素自由的摆放在网页的任意位置 -->
+    <!-- 一般用于盒子之间的层叠情况 -->
+    <!-- 三种布局方式: 标准流 浮动 定位 -->
+
+    <!-- 定位基本使用: 静态定位 相对定位 绝对定位 -->
+    <!-- 1.设置定位方式 属性名:position  属性值: 相对定位relative 绝对定位absolute 固定定位fixed 静态定位static-->
+    <!-- 2.设置偏移值 属性名 left right top bottom 属性值 数字+px -->
+    <p>ceshiceshicscscscscscsccscsscscsc的事实得瑟得瑟的都是第四生当当时都湿都湿的都湿都湿都湿都湿大苏打都湿大苏打说的说的说的是多少多少的多少多少电视</p>
+    <div class="box">box</div>
+    <p>ceshiceshicscscscscscsccscsscscsc的事实得瑟得瑟的都是第四生当当时都湿都湿的都湿都湿都湿都湿大苏打都湿大苏打说的说的说的是多少多少的多少多少电视</p>
+</body>
+</html>

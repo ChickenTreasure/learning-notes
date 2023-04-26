@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 慢慢变化的过程需要用过渡来实现 */
+        /* 属性名: transition */
+        /* 常见取值  过渡的属性: all所有能过渡的属性都过渡  width: 只有width有过渡*/
+        /* 过渡的时长: 数字+s(秒) */
+
+        /* 一般过渡都配合hover使用 */
+        /* 谁变化，谁加transition */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 宽度200 宽度600 1s */
+            /* transition: width 1s,background-color 2s;  一般工作中不这么写*/
+            /* 常用如下 */
+            transition: all 2s;
+        }
+        .box:hover{
+            transition: all;
+            width: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

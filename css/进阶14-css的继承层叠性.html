@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 继承性 特性: 子元素有默认继承父元素样式的特点 */
+        /* 文字控制属性都可以继承 */
+        div{
+            color: pink;
+            font: italic 700 30px songti;
+            /* 所有控制文字的可以继承，但height不是控制文字，所以不能继承。 */
+            height: 400px;
+        }
+        /* 层叠性 特性:  */
+        .lass{
+            color: red;
+            color: brown;
+            /* 后面的叠到前面 */
+        }
+    </style>
+</head>
+<body>
+    <div>这是div里面的文字
+        <span>这是div里面的span</span>
+        <!-- span标签会继承父元素样式的特点 -->
+    </div>
+    <div class="lass">文字</div>
+    <!-- div和.lass两个选择器叠加了 -->
+</body>
+</html>

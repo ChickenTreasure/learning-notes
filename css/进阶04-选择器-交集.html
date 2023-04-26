@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如果只想p的box实现，则用p.box */
+        /* p.box时候，div里的box也便不能实现了 */
+        p.box{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 想找到第一个p，带box类的，设置文字颜色为红色 -->
+    <p class="box">这是P标签</p>
+    <p>ppppppp</p>
+    <div class="box">sdfdiv</div>
+</body>
+</html>

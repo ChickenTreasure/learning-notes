@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* B站第116个视频 */
+        /* 可以发现，两个div块之间有空隙，为什么会出现这个空隙 */
+        /* 因为两个div代码之间换行了，会出现一个空格的间隙 */
+
+        /* 解决方法: 浮动解决 */
+        div{
+            /* 浏览器解析行内块或行内标签的时候，如果标签换行书写，会产生一个空格的距离 */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        .one{
+            background-color: pink;
+        }
+        .two{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 浮动的作用: 早期的作用--图文环绕    现在的作用--网页布局 -->
+    <div class="one">one</div>
+    <div class="two">two</div>
+</body>
+</html>

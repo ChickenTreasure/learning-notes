@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 块级元素一般作为大容器，可以嵌套；文本、块级元素、行内元素、行内块元素等等 -->
+    <!-- 注意: p标签中不要嵌套div/p/h等块级元素 -->
+    <!-- a标签内部除了不能套用a标签本身，其余可以嵌套任意元素 -->
+    <!-- 注意: a标签不能嵌套a标签 -->
+    <p>
+        <h1>一级标题</h1>
+        <!-- 不能这么嵌套，浏览器会自动变成并列 -->
+    </p>
+    <p>
+        <div>divdivididvvvidiv</div>
+        <!-- 同样不能这么嵌套，浏览器会自动容错，变成并列 -->
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 只想选中儿子a,用子代选择器，div>a */
+    /* 因此空格是后代选择器，选中的是所有后代；而子代选择器是大于号>，选中的只是子代 */
+    div>a{
+        color: red;
+    }
+    /* 后代选择器是儿子，孙子等等都css变化 */
+    /* div a{ */
+      /* /  color: red; */
+    /* } */
+</style>
+<body>
+    <div>
+        父级
+        <a href="#">这是div里面的a标签</a>
+        <p>
+            <a href="#">这是div里面的p标签里的a标签</a>
+        </p>
+    </div>
+</body>
+</html>

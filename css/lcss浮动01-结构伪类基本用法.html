@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 表示选中第一个li */
+        li:first-child{
+            background-color: green;
+        }
+        /* （正数）想找第几个，就写第几个，下面是第三个 */
+        li:nth-child(3){
+            background-color: red;
+        }
+        /* 表示选中最后一个li */
+        li:last-child{
+            background-color: skyblue;
+        }
+        /* （倒数）表示找倒数第几个 */
+        li:nth-last-child(3){
+            background-color: yellow;
+        }
+        /* 其实（）里面也可以填公式，2n即偶数 -n+5即找到前五个 n+5即找到从第五个之后 2n+1或2n-1即奇数*/
+        li:nth-child(2n-1){
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构伪类: 1.作用 根据元素在html中的结构关系查找元素
+                    2.优势: 减少对于html中类的依赖，有利于保持代码简洁
+                        3.场景: 常用于查找某父级选择其中的子元素-->
+    <ul>
+        <!-- 代码: ul>li{这是第$个li}*8 -->
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+        <li>这是第5个li</li>
+        <li>这是第6个li</li>
+        <li>这是第7个li</li>
+        <li>这是第8个li</li>
+    </ul>
+</body>
+</html>

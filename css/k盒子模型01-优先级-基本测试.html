@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 越精准，越到位，优先级就会越高 */
+        body{
+            color: red;
+        }
+        /* 无div时候是继承显示红色，有的话，显示绿色 */
+        div{
+            color: green;
+        }
+        /* 类选择器>标签选择器 */
+        .box{
+            color: blue;
+        }
+        /* id选择器>类选择器 */
+        #box{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 优先级特性: 不同选择器具有不同的优先级,优先级高的选择器样式会覆盖优先级低的选择器样式 -->
+    <!-- 优先级公式: 继承 < 通配符选择器 < 标签选择器 < 类选择器 < id选择器 < 行内样式 < !important-->
+    <!-- !important会提升至最高的优先级 -->
+    <!-- 优先级注意: 1.!important写在属性值的后面，分号的前面
+                    2.!important不能提升继承的优先级
+                    3.实际开发不建议!important -->
+
+    <!-- 继承 -->
+    <!-- 标签内style 行内样式>id选择器>类选择器>标签选择器 -->
+    <div class="box" id="box" style="color: chartreuse;">测试优先级</div>
+    
+</body>
+</html>

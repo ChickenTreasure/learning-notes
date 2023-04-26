@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 场景: 互相嵌套的块级元素，子元素的margin-top会作用在父元素上 */
+        /* 结果: 导致父元素一起向下移动 */
+        .father{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 1.因此对子盒子进行内部移动，在父盒子里用内边距 */
+            /* padding-top: 50px; */
+
+            /* 给父元素设置border也可避免坑爹现象;但是如果实战设计稿没有边框线，就不能这样 */
+            /* border: 1px solid #000; */
+
+            /* 2.添加overflow:hidden */
+            /* overflow: hidden; */
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* 如果对盒子里的盒子进行移动；倘若在子盒子使用margin，会对父盒子出现坑爹现象 */
+            margin-top: 50px;
+            /* 解决方法: */
+            /* 1.给父元素设置border-top或者padding-top（分隔父子元素的margin-top） */
+            /* 2.给父元素设置overflow: hidden  此方案最为完美*/
+            /* 3.转换成行内块元素 */
+            /* 4.设置浮动 */
+
+            /* 3.转换成行内块元素 */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">son</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 背景色： background-color */
+        /* 背景图片：background-image:url('图片的路径') */
+        /* 背景平铺：background-repeat 平铺 no-repeat不平铺 repeat-x沿着x平铺 repeat-y沿着y平铺 */
+        /* 背景位置：background-position 水平方向位置 垂直方向位置   水平：left center right 垂直: top center bottom */
+        
+        div {
+            background-color: pink;
+            width: 800px;
+            height: 500px;
+            background-image: url(./背景图.jpg);
+            /* 图很大的话，只显示一部分；图很小，显示很多个图 */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat; */
+            background-repeat: no-repeat;
+            /* background-position: right bottom;右下 */
+            /* background-position: center; 水平 */
+            /* background-position: 50px 100px; 像素移动 */
+            /* background-position: -50px -100px; 出盒子 */
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>div 这是五四路的地图哎</div>
+</body>
+
+</html>

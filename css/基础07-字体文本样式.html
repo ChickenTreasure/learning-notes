@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 文字大小font-size一定不要忘记加上px */
+    /* 字体粗细 font-weight 关键字 正常normal 加粗bold;  用数字来加粗 正常400 加粗700 */
+    /* 推荐数字加粗 */
+    /* 字体是否倾斜 font-style 正常normal 倾斜italic */
+    /* 字体格式font-family  Windows电脑默认微软雅黑 */
+    /* 宋体楷体带顿笔，多了看着比较乱，所以一般网页都是像微软雅黑这类字体 */
+    /* font:style weight size family; font属性可以直接写 */
+    p{
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    h2{
+        /* 变细 */
+        font-weight: 400;
+    }
+    em{
+        font-style: normal;
+    }
+    div{
+        font-family: 楷体;
+    }
+    .font{
+        font: italic 700 66px 宋体;
+        /* 一个属性冒号后面书写多个值的写法 --复合属性 */
+        font-style: normal;
+        /* css的层叠性，下面的会覆盖掉上面的 */
+    }
+</style>
+<body>
+    <!-- 浏览器当中默认字号是16px -->
+    <p>段落文字</p>
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <em>ems</em>
+    <div>这是一个div标签</div>
+    
+    <p class="font">这是一个P标签哦</p>
+</body>
+</html>
